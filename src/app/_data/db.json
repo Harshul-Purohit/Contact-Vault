@@ -1,0 +1,17 @@
+{
+  "contact":[{
+
+    "id":"1",
+    "name":"Harshul Purohit",
+    "email":"harshul@gmail.com",
+    "userid":"1"
+
+  }],
+
+  "user":[{
+    "id":"1",
+    "name":"user1",
+    "email":"purohit@gmail.com",
+    "password":"123456789"
+  }]
+}
