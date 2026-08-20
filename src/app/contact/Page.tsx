@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getSession, deleteContact } from "@/lib/actions";
 import { dbService } from "@/lib/api";
+import { Contact } from "@/lib/types";
 
 export default async function ContactPage() {
   const session = await getSession();
@@ -12,7 +13,7 @@ export default async function ContactPage() {
     redirect("/login");
   }
 
-  let contacts = [];
+  let contacts: Contact[] = [];
   let errorMsg = "";
 
   try {
